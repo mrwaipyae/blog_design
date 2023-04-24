@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Blog System</title>
+    <!-- Import Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Import custom CSS -->
+    <link rel="stylesheet" href="path/to/custom.css" />
+  </head>
+  <body>
+    <!-- Main content -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Sidebar -->
+          <ul class="list-group">
+            <li class="list-group-item active">Dashboard</li>
+            <li class="list-group-item">Posts</li>
+            <li class="list-group-item">Categories</li>
+            <li class="list-group-item">Tags</li>
+            <li class="list-group-item">Users</li>
+            <li class="list-group-item">Settings</li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <!-- Post navigation -->
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <a href="#" class="btn btn-success btn-block">Add New Post</a>
+            </div>
+            <div class="col-md-6">
+              <form class="form-inline float-right">
+                <div class="form-group">
+                  <label for="search" class="mr-2">Search</label>
+                  <input
+                    type="text"
+                    class="form-control mr-2"
+                    id="search"
+                    placeholder="Enter keyword"
+                  />
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Post table -->
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Category</th>
+                <th scope="col">Tags</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>First Post</td>
+                <td>John Doe</td>
+                <td>Tech</td>
+                <td>Web Development, Laravel</td>
+                <td>
+                  <a href="#" class="btn btn-primary">Edit</a>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Second Post</td>
+                <td>Jane Doe</td>
+                <td>Health</td>
+                <td>Fitness, Nutrition</td>
+                <td>
+                  <a href="#" class="btn btn-primary">Edit</a>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Import jQuery, Popper, and Bootstrap scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/esm/popper.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
